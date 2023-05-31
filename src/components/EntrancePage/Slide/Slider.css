@@ -1,0 +1,57 @@
+.slider-component{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.mySlider2{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.mySlider2 ul li{
+    width: 2rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.mySlider2 ul li button{
+    color:white !important;
+}
+
+.mySlider2 ul li button::before{
+    font-size: 20px;
+    color:white !important;
+}
+
+.slick-dots{
+    left:0;
+    bottom: 7% !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+
+/* end */
+
+.slick-dots li.slick-active button::before {
+    opacity: .75;
+    color: blue !important;
+}
+
+.mySlider2 .slick-prev{
+    display: none !important;
+}
+
+.mySlider2 .slick-next{
+    display: none !important;
+}

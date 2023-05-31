@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Top from './components/top/Top';
+import Top from './components/EntrancePage/Entrance';
 
 function App() {
   return (

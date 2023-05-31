@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    gap:1.5rem;
+    padding: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+    width: 150px;
+}
+
+.wrapper>span{
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+    font-size: 14px;
+    color:#d8e3fd
+}
