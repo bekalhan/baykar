@@ -1,0 +1,476 @@
+.mySlider{
+    width: 100%;
+    height: 51.5rem;
+    overflow: hidden;
+    position: relative !important;
+    z-index: 1;
+}
+
+/* slide 1 */
+
+.slide1{
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    height: 52rem;
+}
+.slide1 .video{
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 .video video{
+    height: 100%;
+    object-fit: cover;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5em;
+}
+
+
+/* slide 3 */
+
+.slide3{
+    background-image: url(../../../assets/baykarbackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 51.5rem;
+    position: relative;
+} 
+
+.slide3 img{
+    height: 35rem;
+    position: absolute;
+    left:3.4%
+}
+
+.slide3 .info-slide{
+    position: absolute;
+    top:29%;
+    left:15.7%;
+    width: 20rem;
+
+}
+
+.slide3 .info-slide span{
+    font-size: 5.5rem;
+    color:#1f73bd;
+    font-weight: bold;
+}
+
+.slide3 button{
+    display: flex;
+    background-color: #1f73bd;
+    color:#fff;
+    width: 160px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    justify-content: center;
+    top:57%;
+    align-self: center;
+}
+
+.slide3 button svg{
+    margin-left: 0.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* slide 2 */
+.slide2{
+    background-image: url(../../../assets/baykarbackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 51.5rem;
+    position: relative;
+} 
+
+.slide2 img{
+    height: 32rem;
+    position: absolute;
+    left:10%;
+    top:10%;
+}
+
+.slide2 .info-slide{
+    position: absolute;
+    top:38%;
+    left:15.7%;
+    width: 20rem;
+
+}
+
+.slide2 span{
+    font-size: 5.5rem;
+    color:#1f73bd;
+    font-weight: bold;
+}
+
+.slide2 button{
+    display: flex;
+    background-color: #1f73bd;
+    color:#fff;
+    width: 160px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    position: relative;
+    left: 30%;
+    justify-content: center;
+    top:65%;
+    align-self: center;
+}
+
+
+.slide2 svg{
+    margin-left: 0.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* dots */
+
+.dots{
+    position: relative;
+    width: 100%;
+    background-color: red;
+}
+
+.tooltipDot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.28);
+    background-color: #1e73be;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    /* left:20%;
+    top:15.7%; */
+}
+
+.tooltipDot .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #ffffff;
+    color: #273452;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 10px;
+    margin-top: 1em;
+  }
+
+  .tooltipDot:hover .tooltiptext {
+    visibility: visible;
+    width: 135px;
+    color: #273452;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #ffffff;
+    top: 8px;
+    padding: 10px 15px;
+  }
+
+
+
+
+.mySlider ul li{
+    width: 2rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.mySlider ul li button{
+    color:white !important;
+}
+
+.mySlider ul li button::before{
+    font-size: 25px;
+    color:white !important;
+}
+
+.slick-dots{
+    left:0;
+    bottom: 7% !important;
+    display: flex !important;
+    left: 12%;
+    justify-content: flex-start;
+}
+
+
+/* end */
+
+.slick-dots li.slick-active button::before {
+    opacity: .75;
+    color: blue !important;
+}
+
+.mySlider .slick-prev{
+    display: none !important;
+}
+
+.mySlider .slick-next{
+    display: none !important;
+}
+
+
+/* media query */
+
+@media screen and (max-width:1080px) {
+    .slide3{
+        background-image: url(../../../assets/baykarbackground.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 51.5rem;
+        position: relative;
+    } 
+    
+    .slide3 img{
+        height: 25rem;
+        position: absolute;
+        left:0%;
+        top:15%
+    }
+    
+    .slide3 .info-slide{
+        position: absolute;
+        top:60%;
+        left:8%;
+        width: 20rem;
+    
+    }
+    
+    .slide3.info-slide span{
+        font-size: 3.7rem;
+        color:#1f73bd;
+        font-weight: bold;
+    }
+    
+    .slide3 button{
+        display: flex;
+        background-color: #1f73bd;
+        color:#fff;
+        width: 160px;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 80% !important;
+        justify-content: center;
+        align-self: center;
+        top:80%;
+        
+    }
+    
+    .slide3 button svg{
+        margin-left: 0.5em;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .slick-dots{
+        left:0;
+        bottom: 8% !important;
+        display: flex !important;
+        justify-content:center;
+    }
+
+    /* SLİDE 2 */
+    .slide2{
+        background-image: url(../../../assets/baykarbackground.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 51.5rem;
+        position: relative;
+    } 
+    
+    .slide2 img{
+        height: 25rem;
+        position: absolute;
+        left:0%;
+        top:15%
+    }
+    
+    .slide2 .info-slide{
+        position: absolute;
+        top:55%;
+        left:8%;
+        width: 20rem;
+    
+    }
+    
+    .slide2 span{
+        font-size: 4rem;
+        color:#1f73bd;
+        font-weight: bold;
+    }
+    
+    .slide2 button{
+        display: flex;
+        background-color: #1f73bd;
+        color:#fff;
+        width: 160px;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 80%;
+        justify-content: center;
+        top:75%;
+        align-self: center;
+    }
+    
+    .slide2 svg{
+        margin-left: 0.5em;
+        font-weight: bold;
+        font-size: 15px;
+    }
+ 
+}
+
+@media screen and (max-width:570px) {
+    .slide3{
+        background-image: url(../../../assets/baykarbackground.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 25rem;
+        position: relative;
+    } 
+    
+    .slide3 img{
+        height: 22rem;
+        position: absolute;
+        left:-32%;
+        top:15%
+    }
+    
+    .slide3 .info-slide{
+        position: absolute;
+        top:105%;
+        left:8%;
+        width: 20rem;
+    
+    }
+    
+    .slide3 .info-slide span{
+        font-size:4rem;
+        color:#1f73bd;
+        font-weight: bold;
+    }
+    
+    .slide3 button{
+        display: flex;
+        background-color: #1f73bd;
+        color:#fff;
+        width: 160px;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        position: absolute;
+        left: 65% !important;
+        justify-content: center;
+        align-self: center;
+        top:145%;
+        
+    }
+    
+    .slide3 button svg{
+        margin-left: 0.5em;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .slick-dots{
+        left:0;
+        bottom: 16% !important;
+        display: flex !important;
+        justify-content:center;
+    }
+        /* SLİDE 2 */
+        .slide2{
+            background-image: url(../../../assets/baykarbackground.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 45rem;
+            position: relative;
+        } 
+        
+        .slide2 img{
+            height: 18rem;
+            position: absolute;
+            left:-8%;
+            top:15%
+        }
+        
+        .slide2 .info-slide{
+            position: absolute;
+            top:55%;
+            left:8%;
+            width: 20rem;
+        }
+        
+        .slide2 span{
+            font-size: 4rem;
+            color:#1f73bd;
+            font-weight: bold;
+        }
+        
+        .slide2 button{
+            display: flex;
+            background-color: #1f73bd;
+            color:#fff;
+            width: 160px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            position: absolute;
+            left: 70%;
+            justify-content: center;
+            top:80%;
+            align-self: center;
+        }
+        
+        .slide2 svg{
+            margin-left: 0.5em;
+            font-weight: bold;
+            font-size: 15px;
+        }
+}
+
+@media screen and (max-width: 1400px) {
+    .tooltipDot{
+        display: none;
+    }
+}
+
+
+
+

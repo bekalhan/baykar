@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.news{
+    display: grid;
+    grid-template-columns: 65% 3% 32%;
+    margin-top: 4rem;
+    width: 85%;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1080px) {
+    .news{
+        grid-template-columns: 100%;
+    }
+}
+
+
+
