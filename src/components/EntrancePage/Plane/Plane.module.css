@@ -74,3 +74,42 @@
     background-color: #fff;
     border: 2px solid #fff !important;
 }
+
+.wrapper div div div:nth-child(1){
+    background: linear-gradient(to bottom, #132143 0%, #1e73be 100%) !important; 
+    font-weight: bold !important;
+    width: 4px !important;
+    color: #1e73be;
+}
+
+.wrapper div div div:nth-child(2){
+    background: linear-gradient(to bottom, #132143 0%, #1e73be 100%) !important;
+}
+
+.wrapper div div div:nth-child(3){
+    background: linear-gradient(to bottom, #132143 0%, #1e73be 100%) !important; 
+    font-weight: bold !important;
+    width: 4px !important;
+    color: #1e73be;
+}
+
+
+@media screen and (max-width:1080px) {
+    .virtualText{
+        left: 4%;
+        top:0;
+        line-height: 1.4;
+    }
+    .virtualText>span:nth-child(1){
+        font-size: 22px;
+        font-weight: bold;
+        width: 15rem;
+    }
+    .virtualText>span:nth-child(2){
+        font-size: 15px;
+        width: 22.5rem;
+    }
+    .wrapper{
+        padding-top: 10rem;
+    }
+}

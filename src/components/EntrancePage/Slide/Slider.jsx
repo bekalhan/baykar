@@ -14,8 +14,6 @@ import slide4 from '../../../assets/slide4.jpeg';
 import slide5 from '../../../assets/slide5.jpeg';
 
 
-
-
 const SliderComponent = () => {
 
     const settings = {
@@ -30,7 +28,7 @@ const SliderComponent = () => {
     <div className="slider-component">
         <Slider {...settings} className="mySlider2">
                 <div className="slide">
-                    <img src={slide1} />
+                    <img src={slide1} title="asd" />
                 </div>
                 <div className="slide">
                     <img src={slide2} />

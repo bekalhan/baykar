@@ -89,3 +89,10 @@
     color:#fff;
     font-size: 14px;
 }
+
+@media screen and (max-width:1080px) {
+    .cardHeader>span{
+        font-size: 26px;
+        font-weight: bold;
+    }
+}

@@ -292,9 +292,11 @@
 
     .slick-dots{
         left:0;
-        bottom: 8% !important;
+        position: absolute;
+        bottom: 0% !important;
         display: flex !important;
         justify-content:center;
+        top:80%;
     }
 
     /* SLİDE 2 */

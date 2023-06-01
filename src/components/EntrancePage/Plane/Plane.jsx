@@ -13,8 +13,8 @@ const Plane = () => {
             <span>Dünden bugüne tüm gücümüzle milli mücadeleye katkı sunmanın gururunu yaşıyoruz</span>
         </div>
         <div className={css.wrapper}>
-            <ReactCompareImage leftImage={before}
-            rightImage={after}
+            <ReactCompareImage leftImage={after}
+            rightImage={before}
             />    
         </div>
         <div className={css.buttons}>

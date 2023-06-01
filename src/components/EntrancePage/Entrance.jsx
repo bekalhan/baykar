@@ -7,7 +7,7 @@ import Slider from './Slide/Slider';
 
 const Top = () => {
   return (
-    <div>
+    <div style={{backgroundColor: "#132143"    }}>
         <Home />
         <News />
         <Slider />

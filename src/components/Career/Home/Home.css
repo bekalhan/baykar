@@ -1,0 +1,184 @@
+.career-home{
+    width: 100%;
+    height: 52rem;
+    background-image: url(../../../assets/kariyerbck.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.mySlider3{
+    height: 24rem;
+    margin-top: 10rem;
+    overflow: hidden;
+    z-index: 2;
+    width: 100%;
+}
+
+.slick-slide div .slide{
+    display: grid !important;
+    position: relative;
+    grid-template-columns: 10% 45% 25% 10%;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.slick-slide img{
+    width: 35rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slick-slide div .slide .desc{
+    position: relative;
+    top:20%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.slick-slide div .slide .desc>span:nth-child(1){
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+    width: 40rem;
+}
+
+.slick-slide div .slide .desc>span:nth-child(2){
+    font-size: 15px;
+    font-weight: 600;
+    color:#fff;
+    width: 35rem;
+}
+
+.slick-slide div .slide .desc button{
+    width: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border:2px solid #fff;
+    color:#fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #fff !important;
+    color:#002359 !important;
+}
+
+
+.slick-dots{
+    display: none !important;
+}
+
+.mySlider3 .slick-prev{
+    display: block !important;
+    color:#000 !important;
+    z-index: 2;
+}
+
+.mySlider3 .slick-next{
+    display: block !important;
+    right: 3% !important;
+    width: 40px;
+    height: 40px;
+    top:60%
+}
+
+.mySlider3 .slick-next::before{
+    font-size: 40px;
+    color:grey !important;
+
+}
+
+.mySlider3 .slick-prev{
+    display: block !important;
+    left: 3% !important;
+    width: 40px;
+    height: 40px;
+    top:60%
+}
+
+.mySlider3 .slick-prev:before{
+    font-size: 40px;
+    color:grey !important;
+}
+
+
+@media screen and (max-width:1080px) {
+    .career-home{
+        width: 100%;
+        height: 45rem;
+        background-image: url(../../../assets/kariyerbck.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slick-slide div .slide{
+        display: grid !important;
+        position: relative;
+        grid-template-columns:  100%;
+        position: relative;
+        z-index: 3;
+        width: 100%;
+    }
+    .slick-slide div .slide>div:nth-child(1){
+        display: none;
+    }
+    .slick-slide div .slide>div:nth-child(4){
+        display: none;
+    }
+    .slick-slide div .slide .desc{
+        position: relative;
+        top:0%;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        left: 5%;
+    }
+    
+    .slick-slide div .slide .desc>span:nth-child(1){
+        font-size: 40px;
+        font-weight: 600;
+        color:#fff;
+        width: 27rem;
+    }
+    
+    .slick-slide div .slide .desc>span:nth-child(2){
+        font-size: 15px;
+        font-weight: 600;
+        color:#fff;
+        width: 25rem;
+    }
+    .mySlider3{
+        height: 34rem;
+        margin-top: 10rem;
+        overflow: hidden;
+        z-index: 2;
+        width: 100%;
+    }
+    .slick-slide{
+        display: flex;
+        justify-content: center;
+    }
+    .slick-slide img{
+        width: 35rem;
+        margin: auto;
+    }
+    .mySlider3 .slick-next{
+        top:75%
+    }
+    .mySlider3 .slick-prev{
+        top:75%
+    }
+    
+}
