@@ -1,0 +1,83 @@
+.statistics{
+    width: 100%;
+    height: 30rem;
+    background-image: url(../../../assets/map5.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+    border: transparent;
+    position: relative;
+}
+
+.statistics>span{
+    font-size: 40px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    color:#002359;
+}
+
+.numbers{
+    position: absolute;
+    top:40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.numbers>span{
+    font-weight: bold;
+    color:#002359;
+    font-size: 40px;
+}
+
+.personels{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem
+}
+
+.group img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.group>span:nth-child(2){
+    color:#666666;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.group>span:nth-child(3){
+    color:#666666;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* media query */
+@media screen and (max-width:1080px) {
+    .statistics{
+        background-image: none;
+    }
+    .personels{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

@@ -1,0 +1,54 @@
+.mySlide5{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.mySlide5 img{
+    width: 420px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.mySlide5 .slick-next::before{
+    color:red !important;
+}
+.mySlide5 .slick-prev::before{
+    color:red !important;
+}
+
+.mySlide5 div{
+    position: relative;
+}
+
+.mySlide5 div .Icon{
+    position: absolute;
+    left:43%;
+    top:43%;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 1px 4px 20px -2px rgba(0,0,0,0.1);
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .35s;
+    opacity: 0;
+}
+
+.mySlide5 div .Icon{
+    color: #1e73be;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mySlide5 div:hover > .Icon{
+    opacity: 1;
+}
+
+.mySlide5 div:hover > img{
+    background:linear-gradient(rgba(40,17,17,.3),rgba(17,17,17,.3))
+}

@@ -27,7 +27,7 @@
     width: 100%;
 }
 
-.slick-slide img{
+.mySlider3 .slick-slide img{
     width: 35rem;
     display: flex;
     justify-content: flex-start;
@@ -76,7 +76,7 @@
 }
 
 
-.slick-dots{
+.mySlider3 .slick-dots{
     display: none !important;
 }
 
@@ -170,7 +170,7 @@
         display: flex;
         justify-content: center;
     }
-    .slick-slide img{
+    .mySlider3 .slick-slide img{
         width: 35rem;
         margin: auto;
     }

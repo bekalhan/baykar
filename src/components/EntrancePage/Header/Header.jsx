@@ -7,12 +7,15 @@ import {BiMenuAltLeft} from 'react-icons/bi';
 import hakkimizda from '../../../assets/hakkimizda.png';
 import neler from '../../../assets/neleryapiyoruz.png';
 import gelecegimiz from '../../../assets/gelecegimiz.png';
+import {useNavigate} from 'react-router-dom';
 
 //images
 import logo from '../../../assets/logo.svg'
 import { useState } from 'react';
 
 const Header = () => {
+
+    const navigate = useNavigate();
 
     const [openMenu,setOpenMenu] = useState(true);
     const [toggle,setToggle] = useState({hak:false,neler:false,gel:false});
@@ -114,7 +117,7 @@ const Header = () => {
                             </ul>
                         </div>
                     </li>
-                    <li className={css.menuItem}>
+                    <li className={css.menuItem} onClick={()=>navigate('/career')}>
                         <a href='#'>KARİYER</a>
                     </li>
                     <li className={css.menuItem}>
@@ -176,7 +179,7 @@ const Header = () => {
                             </ul>
                         </div>
                     </li>
-                    <li className={css.menuItem}>
+                    <li className={css.menuItem} onClick={()=>navigate('/career')}>
                         <a href='#'>KARİYER</a>
                     </li>
                     <li className={css.menuItem}>

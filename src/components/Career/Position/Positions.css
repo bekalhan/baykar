@@ -1,0 +1,120 @@
+.mySlide4{
+    margin-top: 5rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posItem{
+    width: 280px;
+    height: 480px;
+    padding: 60px 37px;
+    background: #fff;
+    display: flex;
+    box-shadow:0px 10px 20px 0px rgb(0 0 0 / 20%);
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem !important;
+    justify-content: center;
+    text-align: center;
+    gap:2rem;
+    transition: all .3s;
+}
+
+.mySlide4 .slick-slide>div{
+    padding: 0 15px;
+}
+
+.mySlide4 .slick-slide>div:first-child{
+    padding-left:0 !important;
+}
+
+.posItem .itemIcon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 1px 4px 20px -2px rgba(0,0,0,0.1);
+    transition: all 0.6s;
+}
+
+.posItem .itemIcon svg{
+    display: flex;
+    align-items: center;
+    background-color: #1b1d4d;
+    color:#fff;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.posItem .itemTitle{
+    margin-top: 2rem;
+}
+
+.posItem .itemTitle>span{
+    font-size: 16px;
+    color:#1b1d4d;
+    font-weight: bold;
+}
+
+.posItem .itemDesc{
+    margin-top: 3rem;
+}
+
+.posItem .itemDesc>p{
+    min-height: 105px;
+    color:#666666;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.itemIcon .itemButton{
+    margin-top: 1rem;
+}
+
+.item-btn{
+    width: 130px;
+    height: 50px;
+    padding: 10px 35px;
+    border: 2px solid #e7e7e7;
+    background: transparent;
+    border-radius: 30px;
+    color:#1b1d4d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.posItem:hover{
+    scale: 1.06;
+}
+
+.posItem:hover .item-btn{
+    background-color: #1b1d4d;
+    color:#fff;
+}
+
+.item-btn:hover{
+    background-color: transparent !important;
+    color:#1b1d4d !important;
+}
+
+
+.itemIcon:hover {
+    transform: rotate(180deg);
+    scale: 1.3;
+}
+
+.mySlide4 .slick-next::before{
+    color:red !important;
+}
+.mySlide4 .slick-prev::before{
+    color:red !important;
+}

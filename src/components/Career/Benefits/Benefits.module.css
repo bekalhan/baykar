@@ -1,0 +1,108 @@
+.benefits{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap:4rem
+}
+
+.benefits .header{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+    justify-content: center;
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 4px 20px -2px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 250px;
+    position: relative;
+}
+
+.cards .card img{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.cards .card>span{
+    font-weight: bold;
+    color:#666666;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.education{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap:8rem;
+}
+
+.education .card{
+    display: flex;
+    flex-direction: column;
+}
+
+.education .card img{
+    width: 120px;
+    height: 120px;
+}
+
+.education .card span{
+    font-weight: bold;
+    color:#666666;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education p{
+    color:#666666;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+@media screen and (max-width:1080px) {
+    .education{
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+    }
+    .education .card{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .education .card span{
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .cards{
+        width: 100% !important;
+        padding: 0.5rem 2rem;
+
+    }
+    .cards .card{
+        width: 100% !important;
+    }
+}

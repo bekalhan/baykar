@@ -27,19 +27,19 @@ const SliderComponent = () => {
   return (
     <div className="slider-component">
         <Slider {...settings} className="mySlider2">
-                <div className="slide">
+                <div className="slideent">
                     <img src={slide1} title="asd" />
                 </div>
-                <div className="slide">
+                <div className="slideent">
                     <img src={slide2} />
                 </div>
-                <div className="slide">
+                <div className="slideent">
                     <img src={slide3} />
                 </div>
-                <div className="slide">
+                <div className="slideent">
                     <img src={slide4} />
                 </div>
-                <div className="slide">
+                <div className="slideent">
                     <img src={slide5} />
                 </div>
         </Slider>

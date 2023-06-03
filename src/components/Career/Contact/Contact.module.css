@@ -1,0 +1,187 @@
+.contact{
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 5rem;
+    gap:4rem;
+}
+
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.accordion .header{
+    font-size: 30px;
+    font-weight: bold;
+    color:#002359;
+}
+
+.accordion .header>span{
+    font-size: 30px;
+    font-weight: bold;
+    color:#002359;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem
+}
+
+.accordion>button{
+    width: 140px;
+    height: 50px;
+    color:#fff;
+    background-color: #121c4e;
+}
+
+.comm{
+    background-image: url(../../../assets/contact.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.comm:after{
+    content: "";
+    height: 100%;
+    background: #002359 none repeat scroll 0 0;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.comm form{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 4rem 4rem;
+}
+
+form>span{
+    font-size: 30px;
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields>input:nth-child(1){
+    grid-area: ad;
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields>input:nth-child(1)::placeholder{
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields>input:nth-child(2){
+    grid-area: eposta;
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields>input:nth-child(2)::placeholder{
+    color:#fff;
+    font-weight: bold;
+}
+
+
+.fields>input:nth-child(3){
+    grid-area: telefon;
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #fff;
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields>input:nth-child(3)::placeholder{
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields textarea{
+    grid-area: mesaj;
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #fff;
+    height: 140px;
+}
+
+.fields textarea::placeholder{
+    color:#fff;
+    font-weight: bold;
+}
+
+.fields{
+    display: grid;
+    grid-template-areas:
+     'ad ad'
+     'eposta telefon'
+     'mesaj mesaj'
+     ;
+     gap:2rem;
+}
+
+.fields>button{
+    width: 140px;
+    height: 50px;
+    border:2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* media query */
+
+@media screen and (max-width:1280px) {
+    .contact{
+        grid-template-columns: 1fr;
+        padding: 2rem 8rem;
+    }
+    .fields{
+        display: grid;
+        grid-template-areas:
+         'ad'
+         'eposta'
+         'telefon'
+         'mesaj'
+         ;
+         gap:2rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .contact{
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+}

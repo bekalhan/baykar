@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../Header/Header';
 import Slider from "react-slick";
 import {AiOutlineRight} from 'react-icons/ai';
 import {motion} from 'framer-motion';

@@ -5,8 +5,12 @@ import logo from '../../../assets/baykarkariyer.png';
 import {BiMenu} from 'react-icons/bi';
 import logo2 from '../../../assets/logo2.png';
 import {RxCross2} from 'react-icons/rx';
+import {useNavigate} from 'react-router-dom';
+
 
 const Header = () => {
+
+    const navigate = useNavigate();
 
     const [open,setOpen] = useState(false);
     const [toggle,setToggle] = useState({kariyer:false,staj:false});
@@ -63,7 +67,7 @@ const Header = () => {
                             </div>
                         </li>
                         <li>S.S.S</li>
-                        <li>BAYKAR</li>
+                        <li onClick={()=>navigate('/')}>BAYKAR</li>
                     </ul>
                 </div>
                 <div className={css.buttons}>
@@ -113,7 +117,7 @@ const Header = () => {
                 <li>
                     S.S.S
                 </li>
-                <li>
+                <li onClick={()=>navigate('/')}>
                     BAYKAR
                 </li>
             </ul>

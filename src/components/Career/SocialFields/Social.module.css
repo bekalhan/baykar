@@ -1,0 +1,17 @@
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.header span{
+    font-size: 30px;
+    font-weight: bold;
+    color:#002359;
+}

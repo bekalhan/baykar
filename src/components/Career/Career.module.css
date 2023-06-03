@@ -1,4 +1,6 @@
 .career{
     display: flex;
     flex-direction: column;
+    background-color: #f4f4f4;
+
 }
