@@ -1,0 +1,296 @@
+.header{
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img{
+    width: 220px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.menu>.list{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    height: 5rem;
+}
+
+.menu .list>li{
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+
+.menu>.list>li:nth-child(1){
+    color:#26b;
+}
+
+.subMenu{
+    position: absolute;
+    top:100%;
+    display: flex;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 2px 35px rgba(0,0,0,0.1);
+    scale: 0;
+    transition: all .3s;
+    background-color: #fff;
+}
+
+.subMenu .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    width: 50%;
+    padding: 2rem 1rem;
+}
+
+.subMenu .list li{
+    font-size: 13px;
+    color:#666666;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.subMenu .list li:hover{
+    scale: 1.2;
+    margin-left: 2em;
+    color:#26b;
+}
+
+.subMenu .image{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.subMenu .image img{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.subMenu .image .hoverTitle{
+    position: absolute;
+    bottom: 17%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 18px 40px rgb(112 144 176 / 42%);
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.subMenu .image .hoverTitle>span:nth-child(1){
+    font-size: 18px;
+    color:#26b;
+    font-weight: bold;
+}
+
+.subMenu .image .hoverTitle>span:nth-child(2){
+    font-size: 14px;
+    color:#000;
+    font-weight: bold;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.subMenu .image .hoverTitle>span:nth-child(2):hover{
+    border-bottom: 2px solid #000;
+}
+
+.menu .list>li:nth-child(2):hover .subMenu{
+    scale: 1;
+}
+
+.menu .list>li:nth-child(3):hover>.subMenu{
+    scale: 1;
+}
+
+.menu .list>li:nth-child(4):hover>.subMenu{
+    scale: 1;
+}
+
+.action{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.action .search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.action>span{
+    color:#e1e1e1;
+}
+
+.action .search>svg{
+    font-size: 20px;
+    margin-top: 0.2em;
+}
+
+.action .language{
+    display: flex;
+    align-items: center;
+}
+
+.action .language span{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.action .form{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+
+.action .form>svg{
+    font-size: 16px;
+}
+
+.action .form>span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.action .basket{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+
+.action .basket>span:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.action .basket>span:nth-child(2){
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.action .basket>span:nth-child(3){
+    color:#26b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.action .basket>svg{
+    font-size: 32px;
+    margin-left: 0.3em;
+    color:#26b;
+}
+
+.menuItem{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.header>svg{
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+    .header{
+        padding: 1rem !important;
+        justify-content: space-between;
+    }
+    .header>svg{
+        display: block;
+    }
+    .menuItem{
+        display: block;
+        font-size: 30px;
+        color:#26b;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+    .action .search{
+        display: none;
+    }
+    .action .language{
+        display: none;
+    }
+    .action>span{
+        display: none;
+    }
+    .basket span{
+        display: none;
+    }
+    .mobileMenu{
+        display: flex;
+        position: absolute;
+        left: 0;
+        width: 300px;
+        height: 1600px;
+        background: #222529;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 4rem 2rem;
+        gap:7rem;
+        margin-top: 4rem;
+        transition: all 0.5s;
+    }
+    .mobileList{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+        width: 100%;
+    }
+    .mobileList li{
+        color:#fff;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .mobileList li:hover{
+        color:#26b;
+    }
+    .header>svg{
+        position: absolute;
+        left: 260px;
+        top:1%;
+        font-size: 25px;
+        color:#fff;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logo img{
+        width: 150px;
+        height: 40px;
+    }
+}
+

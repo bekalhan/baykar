@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect } from 'react';
 import {AiFillCaretDown,AiFillCaretRight} from 'react-icons/ai';
 import css from './Header.module.css';
 import logo from '../../../assets/baykarkariyer.png';
@@ -127,4 +127,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

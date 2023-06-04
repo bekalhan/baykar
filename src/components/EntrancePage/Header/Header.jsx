@@ -120,7 +120,7 @@ const Header = () => {
                     <li className={css.menuItem} onClick={()=>navigate('/career')}>
                         <a href='#'>KARİYER</a>
                     </li>
-                    <li className={css.menuItem}>
+                    <li className={css.menuItem} onClick={()=>navigate('/store')}>
                         <a href='#'>MAĞAZA</a>
                     </li>
                     <li className={css.menuItem}>
@@ -182,7 +182,7 @@ const Header = () => {
                     <li className={css.menuItem} onClick={()=>navigate('/career')}>
                         <a href='#'>KARİYER</a>
                     </li>
-                    <li className={css.menuItem}>
+                    <li className={css.menuItem} onClick={()=>navigate('/store')}>
                         <a href='#'>MAĞAZA</a>
                     </li>
                     <li className={css.menuItem}>

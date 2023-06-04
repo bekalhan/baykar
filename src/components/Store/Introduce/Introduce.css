@@ -1,0 +1,153 @@
+.mySlide10 .slick-dots li button::before{
+    color:white !important;
+    font-size: 14px;
+}
+
+.mySlide10 .slick-dots li .slick-active button::before{
+    width: 50px !important;
+}
+
+.mySlide10 .slick-slide{
+    width: 100%;
+}
+
+.mySlide10{
+    width: 100%;
+    height: 100%;
+}
+
+.mySlide10 .slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlide10 .slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/* slide 1 */
+.mySlide10 .slide1{
+    background-image: url(../../../assets/int1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;
+    position: relative;
+}
+
+.mySlide10 .slide2{
+    background-image: url(../../../assets/int2.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;
+    position: relative;
+}
+
+.mySlide10 .slide3{
+    background-image: url(../../../assets/int3.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;
+    position: relative;
+}
+
+.mySlide10 .slide1 .text{
+    position: absolute;
+    right: 10%;
+    top: 26%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+}
+
+.mySlide10 .slide1 .text>span:nth-child(1){
+    color:#000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mySlide10 .slide1 .text>span:nth-child(2){
+    color:#26b;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.mySlide10 .slide1 .text>button{
+    width: 140px;
+    height: 50px;
+    background-color: #000;
+    color:#fff;
+    font-weight: bold ;
+}
+
+.mySlide10 .slide3 .text>button{
+    display: none;
+}
+
+.introduce .Icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 5rem;
+}
+
+.introduce .Icons .icon{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduce .Icons .icon>svg{
+    color:#000;
+    font-size: 50px;
+
+}
+
+.introduce .Icons .icon .icon-text{
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+    text-align: left;
+}
+
+.introduce .Icons .icon .icon-text>span:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+
+}   
+
+.introduce .Icons .icon .icon-text>span:nth-child(2){
+    font-size: 13px;
+    font-weight: bold;
+    color:#666;
+
+}   
+
+@media screen and (max-width:700px) {
+    .mySlide10 .slide1 .text{
+        display: none;
+    }
+
+    .mySlide10 .slide1{
+        height: 15rem;
+    }
+
+    .Icons{
+        padding: 1rem 1rem !important;
+    }
+}

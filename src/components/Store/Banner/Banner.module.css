@@ -1,0 +1,64 @@
+.banner{
+    background-image: url(../../../assets/bckmagazaa.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    position: relative;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.banner .text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    top:30%;
+    left:35%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.banner .text>span:nth-child(1){
+    background-color:#26b;
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap:0.6rem;
+    font-weight: bold;
+}
+
+.banner .text>span:nth-child(2){
+    font-size: 24px;
+    color:#fff;
+    font-weight: bold;
+}
+
+.banner .text>button{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    color:#000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner .text>button:hover{
+    background-color: #26b;
+    color:#fff;
+    border:1.5px solid #fff;
+}
+
+
+@media screen and (max-width:800px) {
+    .banner .text{
+        display: none !important;
+    }
+    .banner{
+        height: 12rem;
+    }
+}
