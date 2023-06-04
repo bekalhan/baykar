@@ -10,7 +10,7 @@ const Top = () => {
     <div style={{backgroundColor: "#132143"    }}>
         <Home />
         <News />
-        <Slider />
+        {/* <Slider /> */}
         <Plane />
         <Footer />
     </div>

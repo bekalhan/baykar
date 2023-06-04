@@ -6,6 +6,7 @@ import Header from './Header/Header'
 import Introduce from './Introduce/Introduce'
 import TopProducts from './TopProducts/TopProducts';
 import css from './Store.module.css';
+import Tshirts from './Tshirts/Tshirts'
 
 const Store = () => {
   return (
@@ -15,6 +16,7 @@ const Store = () => {
         <Categories />
         <TopProducts />
         <FeaturedProducts />
+        <Tshirts />
         <Banner />
     </div>
   )

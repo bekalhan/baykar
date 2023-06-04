@@ -1,0 +1,104 @@
+.tshirts{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mySlide12{
+    width: 80%;
+}
+
+.mySlide12 .slideItem{
+    width: 320px;
+    height: 390px;
+    position: relative;
+}
+
+.mySlide12 .slideItem img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.mySlide12 .slick-slide>div{
+    padding: 0 8px;
+}
+
+.mySlide12 .slideItem .slideText{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mySlide12 .slideItem .slideText>span:nth-child(1){
+    font-size: 17px;
+    color:#000;
+    font-weight: bold;
+}
+
+.mySlide12 .slideItem .slideText>span:nth-child(2){
+    font-size: 24px;
+    color:#26a;
+    font-weight: bold;
+}
+
+.mySlide12 .slideItem button{
+    position: absolute;
+    bottom: 20%;
+    background-color: #26a;
+    color:#fff;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.mySlide12 .slideItem .basket{
+    position: absolute;
+    right: 3%;
+    top:3%;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    display: none;
+    cursor: pointer;
+
+}
+
+.mySlide12 .slideItem .basket>svg{
+    color: #999;
+}
+
+.mySlide12 .slideItem:hover > button{
+    display: block;
+}
+
+.mySlide12 .slideItem:hover > .basket{
+    display: block;
+}
+
+.mySlide12 .slideItem .basket:hover{
+    background-color: #26a;
+    color:#fff;
+}
+
+.mySlide12 .slideItem .basket:hover > svg{
+    color:#fff;
+}
+
+.mySlide12 .slick-next::before{
+    color:red !important;
+}
+.mySlide12 .slick-prev::before{
+    color:red !important;
+}
