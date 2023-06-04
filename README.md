@@ -1,4 +1,67 @@
-# Getting Started with Create React App
+# baykar
+
+
+## **_Information_**
+
+> An application using React.js , HTML5 CSS3
+
+* [You can react demo by click this link](https://baykar.netlify.app/)
+
+* [You can reach linkedln for video](https://www.linkedin.com/feed/update/urn:li:activity:7071238018682003457/)
+
+
+<br>
+
+## **_Configuration and Setup_**
+<br>
+
+> In order to run this project locally, simply fork and clone the repository or download as zip and unzip on your machine.
+
+<br>
+
+* Open the project in your prefered code editor.
+* Go to terminal -> New terminal
+* Follow these steps
+
+<br>
+
+> In the terminal
+
+```bash
+npm install (to install dependencies)
+npm run start (to start the project)
+```
+
+<br> <br>
+
+## **_Technologies Used_**
+
+* [React](https://react.dev/learn) The library for web and native user interfaces
+
+* [React-slick](https://react-slick.neostack.com) for sliders
+
+<br>
+
+* [Framer-motion](https://www.framer.com) for animations
+
+<br>
+
+### **_react-router-dom installation_**
+
+#### npm:
+
+```bash
+npm i react-router-dom
+```
+
+<br>
+
+* [Css](https://developer.mozilla.org/en-US/docs/Web/CSS) for UIo
+
+<br><br>
+
+
+## **_Getting Started with Create React App_**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +131,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## **_Brief Pictures_**
+Career Page
+
+![Resim](./src/assets/brief1.png)
+
+<br>
+
+Store Page
+
+![Resim](./src/assets/brief2.png)
+
+<br>
+
+### **_Developer_**
+
+* [Github](https://github.com/bekalhan) This is my github profile
+
+* [Linkedln](https://www.linkedin.com/in/berat-kalhan-76a1391ba/) This is my  linkedln profile
+
+* Email => beratkalhan99@gmail.com
+
+
+<br><br>
+
+### **_Other Projects_**
+
+* [Getir Clone](https://github.com/bekalhan/getir-clone) => Try to make a new getir 
+
+* [Blog Api](https://github.com/bekalhan/REBlog) => Blog api includes banned system , follow and unfollow , who view my profile and more using with nodejs
+
+* [Blog UI](https://github.com/bekalhan/REBlog-Client) => Blog UI with mui
+
+* [E-commerce App](https://github.com/bekalhan/technology) => making a e-commerce app with mern stack
+
+* [Asp.Net Mvc](https://github.com/bekalhan/aspnet-mvc)
+
+
+
+
+
+
