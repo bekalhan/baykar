@@ -5,7 +5,7 @@
 
 > An application using React.js , HTML5 CSS3
 
-* [You can react demo by click this link](https://baykar.netlify.app/)
+* [You can reach demo by click this link](https://baykar.netlify.app/)
 
 * [You can reach linkedln for video](https://www.linkedin.com/feed/update/urn:li:activity:7071238018682003457/)
 
